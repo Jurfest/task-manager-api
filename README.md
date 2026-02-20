@@ -19,8 +19,6 @@ The API provides task management features such as creation, retrieval, update, a
 
 The solution follows a layered architecture:
 
-
-TaskManager
 ```mermaid
 flowchart TD
 
