@@ -23,9 +23,14 @@ The solution follows a layered architecture:
 TaskManager
 ```mermaid
 flowchart TD
-    TaskManager --> API[TaskManager.API<br/>HTTP / Controllers]
-    TaskManager --> App[TaskManager.Application<br/>Business Logic / Services]
-    TaskManager --> Comm[TaskManager.Communication<br/>DTOs / Contracts / Enums]
+
+    Client[Client / HTTP Consumer] --> API[TaskManager.API<br/>Controllers / Swagger]
+
+    API --> App[TaskManager.Application<br/>Business Logic / Services]
+
+    App --> Comm[TaskManager.Communication<br/>DTOs / Contracts / Enums]
+
+    App --> DB[(SQLite Database)]
 ```
 
 
