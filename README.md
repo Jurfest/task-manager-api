@@ -21,9 +21,12 @@ The solution follows a layered architecture:
 
 
 TaskManager
-├── TaskManager.API → HTTP / Controllers
-├── TaskManager.Application → Business Logic / Services
-└── TaskManager.Communication → DTOs / Contracts / Enums
+```mermaid
+flowchart TD
+    TaskManager --> API[TaskManager.API<br/>HTTP / Controllers]
+    TaskManager --> App[TaskManager.Application<br/>Business Logic / Services]
+    TaskManager --> Comm[TaskManager.Communication<br/>DTOs / Contracts / Enums]
+```
 
 
 - **API Layer** → Handles HTTP requests & responses  
