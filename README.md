@@ -83,7 +83,7 @@ Swagger UI:
 https://localhost:<port>/swagger
 ```
 
-### 🎯 Purpose
+## 🎯 Purpose
 
 This project is intended for learning and portfolio demonstration, focusing on:
 
