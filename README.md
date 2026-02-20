@@ -75,10 +75,14 @@ The application uses **SQLite** for lightweight, file-based storage with no exte
 ```bash
 dotnet restore
 dotnet run --project TaskManager.API
+```
 
 Swagger UI:
 
+```bash
 https://localhost:<port>/swagger
+```
+
 🎯 Purpose
 
 This project is intended for learning and portfolio demonstration, focusing on:
