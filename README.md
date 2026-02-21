@@ -19,11 +19,17 @@ The API provides task management features such as creation, retrieval, update, a
 
 The solution follows a layered architecture:
 
+```mermaid
+flowchart TD
 
-TaskManager
-├── TaskManager.API → HTTP / Controllers
-├── TaskManager.Application → Business Logic / Services
-└── TaskManager.Communication → DTOs / Contracts / Enums
+    Client[Client / HTTP Consumer] --> API[TaskManager.API<br/>Controllers / Swagger]
+
+    API --> App[TaskManager.Application<br/>Business Logic / Services]
+
+    App --> Comm[TaskManager.Communication<br/>DTOs / Contracts / Enums]
+
+    App --> DB[(SQLite Database)]
+```
 
 
 - **API Layer** → Handles HTTP requests & responses  
